@@ -54,14 +54,38 @@
 		73AA943D1E749612009A2B04 /* Chet's Tip Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				73AA94501E749634009A2B04 /* Model */,
+				73AA94511E74963C009A2B04 /* View */,
+				73AA94521E749645009A2B04 /* Controller */,
 				73AA943E1E749612009A2B04 /* AppDelegate.swift */,
-				73AA94401E749612009A2B04 /* ViewController.swift */,
 				73AA94421E749612009A2B04 /* Main.storyboard */,
 				73AA94451E749612009A2B04 /* Assets.xcassets */,
 				73AA94471E749612009A2B04 /* LaunchScreen.storyboard */,
 				73AA944A1E749612009A2B04 /* Info.plist */,
 			);
 			path = "Chet's Tip Calculator";
+			sourceTree = "<group>";
+		};
+		73AA94501E749634009A2B04 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		73AA94511E74963C009A2B04 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		73AA94521E749645009A2B04 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				73AA94401E749612009A2B04 /* ViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
