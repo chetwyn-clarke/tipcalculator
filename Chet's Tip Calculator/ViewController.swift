@@ -10,16 +10,25 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var textfield: UITextField!
+    @IBOutlet weak var tipPercentageLbl: UILabel!
+    @IBOutlet weak var tipPercentageSlider: UISlider!
+    @IBOutlet weak var tipLbl: UILabel!
+    @IBOutlet weak var totalLbl: UILabel!
+    
+    var tip = TipModel(billAmount: 0.0, tipPercent: 0.0)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func billAmountWasChanged(_ sender: Any) {
+        //print("Bill amount changed!")
     }
-
-
+    
+    @IBAction func tipPercentageWasChanged(_ sender: Any) {
+        print(tipPercentageSlider.value)
+    }
 }
+
 
