@@ -61,16 +61,16 @@
                                         <rect key="frame" x="0.0" y="90" width="315" height="73"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UGC-BL-AuX">
-                                                <rect key="frame" x="0.0" y="0.0" width="50" height="73"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="70" height="73"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="50" id="zua-5G-G50"/>
+                                                    <constraint firstAttribute="width" constant="70" id="zua-5G-G50"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                                 <color key="textColor" red="0.21960784310000001" green="0.094117647060000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.14999999999999999" minValue="0.10000000000000001" maxValue="0.25" translatesAutoresizingMaskIntoConstraints="NO" id="LMN-4I-XG9">
-                                                <rect key="frame" x="48" y="0.0" width="269" height="74"/>
+                                                <rect key="frame" x="68" y="0.0" width="249" height="74"/>
                                                 <connections>
                                                     <action selector="tipPercentageWasChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="f8w-OU-ZHa"/>
                                                 </connections>
@@ -150,7 +150,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="textfield" destination="JLL-Gk-I8f" id="OU5-8y-qp2"/>
+                        <outlet property="textField" destination="JLL-Gk-I8f" id="4ji-AU-mRO"/>
                         <outlet property="tipLbl" destination="qbS-sA-R4S" id="vol-Nh-JfN"/>
                         <outlet property="tipPercentageLbl" destination="UGC-BL-AuX" id="nHt-pP-fQ1"/>
                         <outlet property="tipPercentageSlider" destination="LMN-4I-XG9" id="0hd-ct-URN"/>
