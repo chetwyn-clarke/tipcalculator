@@ -14,6 +14,7 @@ class TipModel {
     private var _tipPercent: Double = 0
     private var _tipAmount: Double = 0
     private var _totalAmount: Double = 0
+    private var _splitAmount: Double = 0
     
     var billAmount: Double {
         get {
@@ -39,6 +40,10 @@ class TipModel {
         return _totalAmount
     }
     
+    var splitAmount: Double {
+        return _splitAmount
+    }
+    
     init(billAmount: Double, tipPercent: Double) {
         self._billAmount = billAmount
         self._tipPercent = tipPercent
@@ -47,6 +52,10 @@ class TipModel {
     func calculateTip() {
         _tipAmount = billAmount * tipPercent
         _totalAmount = billAmount + tipAmount
+    }
+    
+    func calculateSplitBill(amountOfPersons: Double) {
+        _splitAmount = _totalAmount / amountOfPersons
     }
     
     

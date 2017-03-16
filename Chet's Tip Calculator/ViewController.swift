@@ -31,12 +31,15 @@ class ViewController: UIViewController {
         tip.tipPercent = Double(tipPercentageSlider.value)
         tip.billAmount = ((textField.text)! as NSString).doubleValue
         tip.calculateTip()
+        tip.calculateSplitBill(amountOfPersons: Double(splitDivisionSlider.value))
     }
     
     func updateUI() {
         tipLbl.text = String(format: "$%0.2f", tip.tipAmount)
         totalLbl.text = String(format: "$%0.2f", tip.totalAmount)
         tipPercentageLbl.text = "Tip: \(Int(tipPercentageSlider.value * 100))%"
+        splitDivisionLbl.text = "\(Int(splitDivisionSlider.value))-way Split"
+        splitTotalLbl.text = String(format: "$%0.2f", tip.splitAmount)
     }
 
     @IBAction func billAmountWasChanged(_ sender: Any) {
@@ -56,7 +59,9 @@ class ViewController: UIViewController {
     @IBAction func splitDivisionWasChanged(_ sender: UISlider) {
         let roundedValue = round(sender.value)
         sender.value = roundedValue
-        print(roundedValue)
+        
+        setTipCalculationValues()
+        updateUI()
     }
     
     

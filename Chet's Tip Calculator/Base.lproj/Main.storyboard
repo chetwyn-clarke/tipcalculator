@@ -186,7 +186,7 @@
                                                 <color key="textColor" red="0.21960784310000001" green="0.094117647060000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O7Y-FG-pMb">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O7Y-FG-pMb" userLabel="Split Total Label">
                                                 <rect key="frame" x="145" y="0.0" width="170" height="35"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                                 <nil key="textColor"/>
@@ -214,7 +214,7 @@
                     <connections>
                         <outlet property="splitDivisionLbl" destination="LIg-6h-cyk" id="JkE-1W-Mxp"/>
                         <outlet property="splitDivisionSlider" destination="CEQ-La-WlR" id="bEN-nF-w0g"/>
-                        <outlet property="splitTotalLbl" destination="OHJ-W8-gZc" id="PEg-w5-GSf"/>
+                        <outlet property="splitTotalLbl" destination="O7Y-FG-pMb" id="tCd-yC-ZX1"/>
                         <outlet property="textField" destination="JLL-Gk-I8f" id="4ji-AU-mRO"/>
                         <outlet property="tipLbl" destination="qbS-sA-R4S" id="vol-Nh-JfN"/>
                         <outlet property="tipPercentageLbl" destination="UGC-BL-AuX" id="nHt-pP-fQ1"/>
