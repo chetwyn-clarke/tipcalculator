@@ -43,7 +43,7 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="T1G-xv-ZWu">
-                                <rect key="frame" x="30" y="94" width="315" height="273"/>
+                                <rect key="frame" x="30" y="94" width="315" height="423"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Bill amount . . . " textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JLL-Gk-I8f">
                                         <rect key="frame" x="0.0" y="0.0" width="315" height="70"/>
@@ -58,10 +58,10 @@
                                         </connections>
                                     </textField>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tjj-Qc-wjF">
-                                        <rect key="frame" x="0.0" y="90" width="315" height="73"/>
+                                        <rect key="frame" x="0.0" y="90" width="315" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UGC-BL-AuX">
-                                                <rect key="frame" x="0.0" y="0.0" width="70" height="73"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="70" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="70" id="zua-5G-G50"/>
                                                 </constraints>
@@ -70,7 +70,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.14999999999999999" minValue="0.10000000000000001" maxValue="0.25" translatesAutoresizingMaskIntoConstraints="NO" id="LMN-4I-XG9">
-                                                <rect key="frame" x="68" y="0.0" width="249" height="74"/>
+                                                <rect key="frame" x="68" y="0.0" width="249" height="31"/>
                                                 <connections>
                                                     <action selector="tipPercentageWasChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="f8w-OU-ZHa"/>
                                                 </connections>
@@ -78,7 +78,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="WNO-Xt-lBW">
-                                        <rect key="frame" x="0.0" y="183" width="315" height="35"/>
+                                        <rect key="frame" x="0.0" y="140" width="315" height="35"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tipIcon" translatesAutoresizingMaskIntoConstraints="NO" id="wf7-NM-fGc">
                                                 <rect key="frame" x="0.0" y="0.0" width="60" height="35"/>
@@ -107,7 +107,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="7PO-1R-hzf">
-                                        <rect key="frame" x="0.0" y="238" width="315" height="35"/>
+                                        <rect key="frame" x="0.0" y="195" width="315" height="35"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="totalIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Z1i-Uj-ARn">
                                                 <rect key="frame" x="0.0" y="0.0" width="60" height="35"/>
@@ -135,13 +135,75 @@
                                             <constraint firstAttribute="height" constant="35" id="bhr-hI-186"/>
                                         </constraints>
                                     </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="arj-Tp-kBv">
+                                        <rect key="frame" x="0.0" y="250" width="315" height="1"/>
+                                        <color key="backgroundColor" red="0.2196078431372549" green="0.094117647058823528" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="eAK-sf-x6j"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SPLIT BILL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oq0-wX-mPO">
+                                        <rect key="frame" x="0.0" y="271" width="315" height="47"/>
+                                        <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CB8-3f-dGO">
+                                        <rect key="frame" x="0.0" y="338" width="315" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2-Way Split:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LIg-6h-cyk">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="Qp6-j2-Vdo"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                                <color key="textColor" red="0.21960784310000001" green="0.094117647060000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="3" minValue="2" maxValue="8" translatesAutoresizingMaskIntoConstraints="NO" id="CEQ-La-WlR">
+                                                <rect key="frame" x="98" y="0.0" width="219" height="31"/>
+                                                <connections>
+                                                    <action selector="splitDivisionWasChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="XSe-Iu-Ts4"/>
+                                                </connections>
+                                            </slider>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="WR7-k6-82z">
+                                        <rect key="frame" x="0.0" y="388" width="315" height="35"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="totalIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Y5p-Mi-eYs">
+                                                <rect key="frame" x="0.0" y="0.0" width="60" height="35"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="60" id="PDB-gY-meV"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You pay:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OHJ-W8-gZc">
+                                                <rect key="frame" x="70" y="0.0" width="65" height="35"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="65" id="Yf7-SI-tUz"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                                <color key="textColor" red="0.21960784310000001" green="0.094117647060000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O7Y-FG-pMb">
+                                                <rect key="frame" x="145" y="0.0" width="170" height="35"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="hBz-O0-iMT"/>
+                                        </constraints>
+                                    </stackView>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.89803921568627454" green="0.90196078431372551" blue="0.89411764705882346" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="QKL-yF-QZd" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="fle-gi-pJ0"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="T1G-xv-ZWu" secondAttribute="bottom" constant="300" id="hVZ-TX-zXJ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="T1G-xv-ZWu" secondAttribute="bottom" constant="150" id="hVZ-TX-zXJ"/>
                             <constraint firstAttribute="trailing" secondItem="QKL-yF-QZd" secondAttribute="trailing" id="hx9-uC-D2p"/>
                             <constraint firstItem="T1G-xv-ZWu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="l4L-JG-KJp"/>
                             <constraint firstItem="QKL-yF-QZd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="tNp-Eo-DVY"/>
@@ -150,6 +212,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="splitDivisionLbl" destination="LIg-6h-cyk" id="JkE-1W-Mxp"/>
+                        <outlet property="splitDivisionSlider" destination="CEQ-La-WlR" id="bEN-nF-w0g"/>
+                        <outlet property="splitTotalLbl" destination="OHJ-W8-gZc" id="PEg-w5-GSf"/>
                         <outlet property="textField" destination="JLL-Gk-I8f" id="4ji-AU-mRO"/>
                         <outlet property="tipLbl" destination="qbS-sA-R4S" id="vol-Nh-JfN"/>
                         <outlet property="tipPercentageLbl" destination="UGC-BL-AuX" id="nHt-pP-fQ1"/>

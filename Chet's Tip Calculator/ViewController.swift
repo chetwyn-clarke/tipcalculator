@@ -15,6 +15,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var tipPercentageSlider: UISlider!
     @IBOutlet weak var tipLbl: UILabel!
     @IBOutlet weak var totalLbl: UILabel!
+    @IBOutlet weak var splitDivisionLbl: UILabel!
+    @IBOutlet weak var splitDivisionSlider: UISlider!
+    @IBOutlet weak var splitTotalLbl: UILabel!
     
     var tip = TipModel(billAmount: 0.0, tipPercent: 0.0)
     
@@ -49,6 +52,15 @@ class ViewController: UIViewController {
         setTipCalculationValues()
         updateUI()
     }
+    
+    @IBAction func splitDivisionWasChanged(_ sender: UISlider) {
+        let roundedValue = round(sender.value)
+        sender.value = roundedValue
+        print(roundedValue)
+    }
+    
+    
+    
 }
 
 
